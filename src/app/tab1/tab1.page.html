@@ -1,17 +1,140 @@
 <ion-header [translucent]="true">
-  <ion-toolbar>
+  <ion-toolbar color="dark">
     <ion-title>
-      Tab 1
+      Filmes
     </ion-title>
   </ion-toolbar>
 </ion-header>
 
 <ion-content [fullscreen]="true">
-  <ion-header collapse="condense">
-    <ion-toolbar>
-      <ion-title size="large">Tab 1</ion-title>
-    </ion-toolbar>
-  </ion-header>
 
-  <app-explore-container name="Tab 1 page"></app-explore-container>
+  <ion-searchbar placeholder="Procurar"></ion-searchbar>
+
+  <ion-list>
+
+    <ion-item-sliding routerLink="/parasita">
+      <ion-item lines="full">
+        <ion-thumbnail slot="start">
+          <img src="https://www.themoviedb.org/t/p/w600_and_h900_bestv2/igw938inb6Fy0YVcwIyxQ7Lu5FO.jpg">
+        </ion-thumbnail>
+        <ion-label class="ion-text-wrap">
+          <div>
+            <h1>
+              Parasita (2019)</h1>
+            <p>07/11/2019 (BR) - 2h 12m</p>
+            <p>Comédia, Thriller, Drama</p>
+          </div>
+        </ion-label>
+        <ion-chip>
+          <ion-label color="success" outline>85%</ion-label>
+        </ion-chip>
+      </ion-item>
+
+      <ion-item-options side="end">
+        <ion-item-option>
+          <ion-icon slot="icon-only" name="star"></ion-icon>
+        </ion-item-option>
+      </ion-item-options>
+    </ion-item-sliding>
+
+    <ion-item-sliding routerLink="/evangelion">
+      <ion-item lines="full">
+        <ion-thumbnail slot="start">
+          <img src="https://www.themoviedb.org/t/p/w600_and_h900_bestv2/txDIbdn7p6eYdFMVoHbd4wwrNkM.jpg">
+        </ion-thumbnail>
+        <ion-label class="ion-text-wrap">
+          <div>
+            <h1>
+              Neon Genesis Evangelion - O Fim do Evangelho (1997)</h1>
+            <p>19/07/1997 (JP) - 1h 37m</p>
+            <p>Drama, Ficção científica, Animação, Ação</p>
+          </div>
+        </ion-label>
+        <ion-chip>
+          <ion-label color="success" outline>84%</ion-label>
+        </ion-chip>
+      </ion-item>
+
+      <ion-item-options side="end">
+        <ion-item-option>
+          <ion-icon slot="icon-only" name="star"></ion-icon>
+        </ion-item-option>
+      </ion-item-options>
+    </ion-item-sliding>
+
+    <ion-item-sliding routerLink="/de-volta-para-o-futuro">
+      <ion-item lines="full">
+        <ion-thumbnail slot="start">
+          <img src="https://www.themoviedb.org/t/p/w600_and_h900_bestv2/i996T0lI1fGtFEowiH3V6eZthL0.jpg">
+        </ion-thumbnail>
+        <ion-label class="ion-text-wrap">
+          <div>
+            <h1>De Volta para o Futuro (1985)</h1>
+            <p>25/12/1985 (BR) - 1h 55m</p>
+            <p>Aventura, Comédia, Ficção científica, Família</p>
+          </div>
+        </ion-label>
+        <ion-chip>
+          <ion-label color="success" outline>83%</ion-label>
+        </ion-chip>
+      </ion-item>
+
+      <ion-item-options side="end">
+        <ion-item-option>
+          <ion-icon slot="icon-only" name="star"></ion-icon>
+        </ion-item-option>
+      </ion-item-options>
+    </ion-item-sliding>
+
+    <ion-item-sliding routerLink="/titanic">
+      <ion-item lines="full">
+        <ion-thumbnail slot="start">
+          <img src="https://www.themoviedb.org/t/p/w600_and_h900_bestv2/9xjZS2rlVxm8SFx8kPC3aIGCOYQ.jpg">
+        </ion-thumbnail>
+        <ion-label class="ion-text-wrap">
+          <div>
+            <h1>Titanic (1997)</h1>
+            <p>23/01/1998 (BR) - 3h 14m</p>
+            <p>Drama, Romance</p>
+          </div>
+        </ion-label>
+        <ion-chip>
+          <ion-label color="success" outline>79%</ion-label>
+        </ion-chip>
+      </ion-item>
+
+      <ion-item-options side="end">
+        <ion-item-option>
+          <ion-icon slot="icon-only" name="star"></ion-icon>
+        </ion-item-option>
+      </ion-item-options>
+    </ion-item-sliding>
+
+    <ion-item-sliding routerLink="/coraline">
+      <ion-item lines="full">
+        <ion-thumbnail slot="start">
+          <img src="https://www.themoviedb.org/t/p/w600_and_h900_bestv2/805EGizPf6LnFVPGReaa44sBqJr.jpg">
+        </ion-thumbnail>
+        <ion-label class="ion-text-wrap">
+          <div>
+            <h1>Coraline e o Mundo Secreto (2009)</h1>
+            <p>13/02/2009 (BR) - 1h 40m</p>
+            <p>Animação, Família, Fantasia</p>
+          </div>
+        </ion-label>
+        <ion-chip>
+          <ion-label color="success" outline>78%</ion-label>
+        </ion-chip>
+      </ion-item>
+
+      <ion-item-options side="end">
+        <ion-item-option>
+          <ion-icon slot="icon-only" name="star"></ion-icon>
+        </ion-item-option>
+      </ion-item-options>
+    </ion-item-sliding>
+
+  </ion-list>
+
+
 </ion-content>
